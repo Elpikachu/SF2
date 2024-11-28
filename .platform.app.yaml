@@ -10,7 +10,11 @@ dependencies:
     php:
         composer/composer: "2.2.24"
 build:
-    flavor: composer
+    flavor: none
+
+hooks:
+    build: |
+        composer --no-ansi --no-interaction install --no-progress
 
 web:
     commands:
