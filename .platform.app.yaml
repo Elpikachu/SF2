@@ -2,6 +2,9 @@ name: app
 
 type: php:5.6
 
+dependencies:
+    php:
+        composer/composer: "2.2.24"
 build:
     flavor: composer
 
