@@ -2,6 +2,10 @@ name: app
 
 type: php:5.6
 
+runtime:
+    extensions:
+        - intl
+
 dependencies:
     php:
         composer/composer: "2.2.24"
